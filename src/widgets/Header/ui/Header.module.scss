@@ -1,0 +1,93 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 16px 290px;
+	min-height: 84px;
+	background-color: white;
+	&__logo {
+		&_icon {
+			font-size: 26px;
+			font-weight: bold;
+		}
+		&_name {
+			font-weight: bold;
+			font-size: 26px;
+			color: black;
+		}
+	}
+	&__main {
+		width: 271px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__input {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin-left: 320px;
+		width: 315px;
+		height: 44px;
+		padding: 0 14px;
+
+		border: 0 solid;
+		border-radius: 6px;
+		background: rgb(245, 246, 246);
+		&_icon {
+			width: 20px;
+			height: 20px;
+			flex: 0 0 auto;
+		}
+		&_search {
+			width: 100%;
+			min-width: 0;
+			padding: 0;
+			border: none;
+			outline: none;
+			background: transparent;
+		}
+	}
+	&__actions {
+		display: flex;
+		justify-content: space-between;
+		width: 133px;
+		&_cart {
+			cursor: pointer;
+			position: relative;
+			display: grid;
+			place-items: center;
+			width: 40px;
+			height: 40px;
+			padding: 0;
+			border: none;
+			background: transparent;
+			&_count {
+				position: absolute;
+				top: 2px;
+				right: 2px;
+				display: grid;
+				place-items: center;
+				min-width: 16px;
+				height: 16px;
+				padding: 0 4px;
+				border-radius: 50%;
+				background-color: #000000;
+				color: #fff;
+				font-size: 11px;
+				line-height: 1;
+			}
+			&_icon {
+				width: 24px;
+				height: 24px;
+			}
+		}
+		&_login {
+			cursor: pointer;
+			background-color: black;
+			color: white;
+			padding: 13px 20px;
+			border-radius: 7px;
+		}
+	}
+}

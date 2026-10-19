@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	min-width: 320px;
+}
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	font-size: 17px;
+	color: #6f797a;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
