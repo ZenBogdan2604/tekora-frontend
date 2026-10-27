@@ -1,11 +1,17 @@
+import { HomePage } from '@/pages/HomePage'
 import { Header } from '@/widgets/Header/ui/Header'
-import '@app/styles/App.css'
+import { Route, Routes } from 'react-router'
 
 function App() {
 
   return (
     <>
       <Header />
+
+
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+      </Routes>
     </>
   )
 }

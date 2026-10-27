@@ -1,0 +1,116 @@
+.productCard {
+	width: 315px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(238, 240, 241);
+	border-image: none;
+	border-radius: 14px;
+	overflow: hidden;
+	transition:
+		transform 0.2s,
+		box-shadow 0.2s;
+	background: white;
+	&__item {
+		height: 250px;
+		display: grid;
+		position: relative;
+		background: rgb(245, 246, 247);
+		place-items: center;
+		overflow: hidden;
+	}
+	&__heart {
+		position: absolute;
+		right: 14px;
+		top: 14px;
+		width: 32px;
+		height: 32px;
+		font-size: 20px;
+		cursor: pointer;
+		color: #777;
+		transition:
+			color 0.2s ease,
+			transform 0.2s ease;
+		z-index: 2;
+		background: rgb(255, 255, 255);
+		border-width: 0px;
+		border-style: none;
+		border-color: currentcolor;
+		border-image: none;
+		border-radius: 50%;
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		&[aria-pressed='true'] {
+			color: #e63956;
+		}
+	}
+	&__info {
+		padding: 18px;
+		&_category {
+			font-size: 11px;
+		}
+		&_title {
+			font-size: 14px;
+			color: black;
+		}
+		&_rating {
+			font-size: 11px;
+			letter-spacing: 1px;
+			&_stars {
+				color: #e7a655;
+			}
+		}
+		&_bottom {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			&_addCart {
+				color: white;
+				width: 35px;
+				height: 35px;
+				font-size: 19px;
+				border-width: 0px;
+				border-style: none;
+				border-color: currentcolor;
+				border-image: none;
+				background: rgb(26, 32, 33);
+				border-radius: 9px;
+			}
+		}
+	}
+	&__notification {
+		position: fixed;
+		bottom: 24px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1000;
+
+		padding: 12px 20px;
+		border-radius: 8px;
+
+		background: #222;
+		color: #fff;
+
+		font-size: 14px;
+		white-space: nowrap;
+		box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
+
+		animation: toastIn 0.3s ease both;
+	}
+	@keyframes toastIn {
+		from {
+			opacity: 0;
+			transform: translate(-50%, 20px);
+		}
+
+		to {
+			opacity: 1;
+			transform: translate(-50%, 0);
+		}
+	}
+}
+
+strong {
+	color: black;
+}
