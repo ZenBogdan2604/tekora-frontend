@@ -91,3 +91,48 @@
 		font-weight: 800;
 	}
 }
+
+.products {
+	&__container {
+		width: min(100% - 48px, 1330px);
+		margin: 0 auto;
+		padding: 110px 0;
+	}
+	&__topSection {
+		&_overline {
+			font-size: 10px;
+			font-weight: 800;
+			letter-spacing: 2.6px;
+		}
+		&_title {
+			color: black;
+			font-size: 46px;
+			letter-spacing: -2px;
+		}
+		&_block {
+			display: flex;
+			justify-content: space-between;
+		}
+		&_underline {
+			font-size: 14px;
+		}
+		&_link {
+			font-weight: 800;
+			font-size: 13px;
+			color: black;
+			display: flex;
+			width: 150px;
+			justify-content: space-between;
+			align-items: center;
+			&_icon {
+				font-size: 20px;
+			}
+		}
+	}
+	&__bottom {
+		&_section {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
